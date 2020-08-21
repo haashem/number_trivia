@@ -1,0 +1,12 @@
+analyzer:
+  exclude:
+    - "lib/*.g.dart"
+    - "lib/main.g.dart"
+  strong-mode:
+    # Disable implicit cast and dynmic cast
+    # https://dash-overflow.net/articles/getting_started/
+    implicit-casts: false
+    implicit-dynamic: false
+  errors:
+    #missing_return: error
+    missing_required_param: error
